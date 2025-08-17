@@ -618,11 +618,11 @@
 </section>
 
 <!-- Pricing Section -->
-<section class="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden premium-section">
+<section class="py-24 bg-gray-50 relative overflow-hidden premium-section">
 	<!-- Background elements -->
-	<div class="absolute inset-0 opacity-10">
-		<div class="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full blur-3xl"></div>
-		<div class="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full blur-3xl"></div>
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-gray-400 to-gray-500 rounded-full blur-3xl"></div>
+		<div class="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-gray-300 to-gray-400 rounded-full blur-3xl"></div>
 	</div>
 	
 	<div class="relative z-10 container mx-auto px-6">
@@ -630,12 +630,12 @@
 			<h3 class="text-3xl md:text-4xl font-black mb-6">
 				<MorphingText 
 					texts={["Simple, Transparent Pricing", "सरल पारदर्शी"]} 
-					className="section-header-logo pricing-header"
+					className="section-header-logo"
 					morphDuration={2000}
 					pauseDuration={4000}
 				/>
 			</h3>
-			<p class="text-xl text-gray-300 max-w-2xl mx-auto font-medium">
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
 				Choose the plan that fits your needs. Both include our signature "Consider It Done" guarantee.
 			</p>
 		</div>
@@ -643,18 +643,18 @@
 		<!-- Pricing Cards -->
 		<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
 			<!-- Essential Plan -->
-			<div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:border-blue-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
+			<div class="bg-white backdrop-blur-lg rounded-3xl p-8 border border-gray-200 hover:border-blue-400/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20">
 				<div class="text-center mb-8">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-4">
 						<PremiumIcons name="essential" className="w-8 h-8" color="white" />
 					</div>
-					<h4 class="text-2xl font-bold text-white mb-2">Essential</h4>
-					<p class="text-gray-300">Perfect for professionals and small teams</p>
+					<h4 class="text-2xl font-bold text-gray-900 mb-2">Essential</h4>
+					<p class="text-gray-600">Perfect for professionals and small teams</p>
 				</div>
 				
 				<div class="text-center mb-8">
-					<div class="text-5xl font-black text-white mb-2">₹9,000</div>
-					<div class="text-gray-400">per month</div>
+					<div class="text-5xl font-black text-gray-900 mb-2">₹9,000</div>
+					<div class="text-gray-500">per month</div>
 				</div>
 				
 				<div class="space-y-4 mb-8">
@@ -662,137 +662,108 @@
 						<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
 							<span class="text-white text-xs">✓</span>
 						</div>
-						<span class="text-white">20 hours per month</span>
+						<span class="text-gray-700">20 hours per month</span>
 					</div>
 					<div class="flex items-center gap-3">
 						<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
 							<span class="text-white text-xs">✓</span>
 						</div>
-						<span class="text-white">Email & Calendar Management</span>
+						<span class="text-gray-700">Email & Calendar Management</span>
 					</div>
 					<div class="flex items-center gap-3">
 						<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
 							<span class="text-white text-xs">✓</span>
 						</div>
-						<span class="text-white">Basic Research & Data Entry</span>
+						<span class="text-gray-700">Basic Research & Data Entry</span>
 					</div>
 					<div class="flex items-center gap-3">
 						<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
 							<span class="text-white text-xs">✓</span>
 						</div>
-						<span class="text-white">Travel Planning</span>
+						<span class="text-gray-700">Travel Planning</span>
 					</div>
 					<div class="flex items-center gap-3">
 						<div class="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
 							<span class="text-white text-xs">✓</span>
 						</div>
-						<span class="text-white">Real-time response & execution</span>
+						<span class="text-gray-700">Real-time response & execution</span>
 					</div>
 				</div>
 				
-				<BorderBeam 
-					className="w-full"
-					size={250}
-					duration={15}
-					delay={8}
-					borderWidth={1.5}
-					colorFrom="#3b82f6"
-					colorVia="#8b5cf6"
-					colorTo="#6366f1"
-				>
-					<button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-4 px-6 rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">
-						Choose Essential
-					</button>
-				</BorderBeam>
+				<button class="w-full bg-gradient-to-r from-gray-800 to-gray-900 text-white font-bold py-4 px-6 rounded-xl hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+					Choose Essential
+				</button>
 			</div>
 			
 			<!-- Premium Plan -->
-			<div class="bg-gradient-to-br from-yellow-400/20 to-orange-500/20 backdrop-blur-lg rounded-3xl p-8 border-2 border-yellow-400/50 hover:border-yellow-400/80 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/30 relative">
-				<!-- Popular badge -->
-				<div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-					<div class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full text-sm font-bold">
-						MOST POPULAR
+			<div class="bg-white backdrop-blur-lg rounded-3xl p-8 border-2 border-yellow-400 hover:border-yellow-500 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/20 relative">
+				<div class="text-center mb-8">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full mb-4">
+						<PremiumIcons name="premium" className="w-8 h-8" color="black" />
 					</div>
+					<h4 class="text-2xl font-bold text-gray-900 mb-2">Premium</h4>
+					<p class="text-gray-600">For executives and growing businesses</p>
 				</div>
 				
 				<div class="text-center mb-8">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mb-4">
-						<PremiumIcons name="premium" className="w-8 h-8" color="#000000" />
-					</div>
-					<h4 class="text-2xl font-bold text-white mb-2">Premium</h4>
-					<p class="text-gray-300">For executives and growing businesses</p>
-				</div>
-				
-				<div class="text-center mb-8">
-					<div class="text-5xl font-black text-white mb-2">₹25,000</div>
-					<div class="text-gray-400">per month</div>
+					<div class="text-5xl font-black text-gray-900 mb-2">₹25,000</div>
+					<div class="text-gray-500">per month</div>
 				</div>
 				
 				<div class="space-y-4 mb-8">
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white font-semibold">60 hours per month</span>
+						<span class="text-gray-700 font-semibold">60 hours per month</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Everything in Essential +</span>
+						<span class="text-gray-700">Everything in Essential +</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Advanced Research & Analysis</span>
+						<span class="text-gray-700">Advanced Research & Analysis</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Project Management</span>
+						<span class="text-gray-700">Project Management</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Marketing & Social Media Support</span>
+						<span class="text-gray-700">Marketing & Social Media Support</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Instant response & live updates</span>
+						<span class="text-gray-700">Instant response & live updates</span>
 					</div>
 					<div class="flex items-center gap-3">
-						<div class="w-5 h-5 bg-yellow-400 rounded-full flex items-center justify-center">
+						<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center">
 							<span class="text-black text-xs">✓</span>
 						</div>
-						<span class="text-white">Priority support & dedicated manager</span>
+						<span class="text-gray-700">Priority support & dedicated manager</span>
 					</div>
 				</div>
 				
-				<BorderBeam 
-					className="w-full"
-					size={300}
-					duration={12}
-					delay={6}
-					borderWidth={2}
-					colorFrom="#ffd700"
-					colorVia="#f59e0b"
-					colorTo="#d97706"
-				>
-					<button class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold py-4 px-6 rounded-xl hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 transform hover:scale-105">
-						Choose Premium
-					</button>
-				</BorderBeam>
+				<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold py-4 px-6 rounded-xl hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+					Choose Premium
+				</button>
 			</div>
 		</div>
 		
 		<!-- Additional info -->
 		<div class="text-center">
-			<p class="text-gray-400 mb-4">All plans include a 7-day money-back guarantee</p>
+			<p class="text-gray-600 mb-4">All plans include a 7-day money-back guarantee</p>
 			<div class="inline-flex items-center gap-6 text-sm text-gray-500">
 				<span>• No setup fees</span>
 				<span>• Cancel anytime</span>
@@ -803,59 +774,59 @@
 </section>
 
 <!-- Sign Up Section -->
-<section id="signup-form" class="py-20 bg-gradient-to-r from-blue-600 to-purple-700">
+<section id="signup-form" class="py-20 bg-gray-100">
 	<div class="container mx-auto px-6">
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">
 				<h3 class="text-3xl md:text-4xl font-black mb-6">
 					<MorphingText 
 						texts={["Ready to Get Started?", "शुरू करने के लिए तैयार हैं?"]} 
-						className="section-header-logo pricing-header"
+						className="section-header-logo"
 						morphDuration={2000}
 						pauseDuration={4000}
 					/>
 				</h3>
-				<p class="text-xl text-blue-100 max-w-2xl mx-auto font-medium">
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto font-medium">
 					Join hundreds of professionals who've transformed their productivity with Hajika
 				</p>
 			</div>
 			
 			<!-- Signup Form -->
-			<div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20">
+			<div class="bg-white backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-gray-200 shadow-lg">
 				<div class="text-center mb-8">
-					<h4 class="text-2xl font-bold text-white mb-2">Sign Me Up!</h4>
-					<p class="text-blue-200">Get started in less than 2 minutes</p>
+					<h4 class="text-2xl font-bold text-gray-900 mb-2">Sign Me Up!</h4>
+					<p class="text-gray-600">Get started in less than 2 minutes</p>
 				</div>
 				
 				<form class="space-y-6 max-w-2xl mx-auto">
 					<div class="grid md:grid-cols-2 gap-6">
 						<div>
-							<label class="block text-white text-sm font-semibold mb-2">Full Name</label>
-							<input type="text" placeholder="Your full name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-gray-300 focus:border-yellow-400 focus:outline-none transition-all">
+							<label class="block text-gray-700 text-sm font-semibold mb-2">Full Name</label>
+							<input type="text" placeholder="Your full name" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-yellow-400 focus:outline-none transition-all">
 						</div>
 						<div>
-							<label class="block text-white text-sm font-semibold mb-2">Email Address</label>
-							<input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-gray-300 focus:border-yellow-400 focus:outline-none transition-all">
+							<label class="block text-gray-700 text-sm font-semibold mb-2">Email Address</label>
+							<input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-yellow-400 focus:outline-none transition-all">
 						</div>
 					</div>
 					
 					<div class="grid md:grid-cols-2 gap-6">
 						<div>
-							<label class="block text-white text-sm font-semibold mb-2">Phone Number</label>
-							<input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-gray-300 focus:border-yellow-400 focus:outline-none transition-all">
+							<label class="block text-gray-700 text-sm font-semibold mb-2">Phone Number</label>
+							<input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-yellow-400 focus:outline-none transition-all">
 						</div>
 						<div>
-							<label class="block text-white text-sm font-semibold mb-2">Preferred Plan</label>
-							<select class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white focus:border-yellow-400 focus:outline-none transition-all">
-								<option value="essential" class="bg-gray-800">Essential (₹9,000/month)</option>
-								<option value="premium" class="bg-gray-800">Premium (₹25,000/month)</option>
+							<label class="block text-gray-700 text-sm font-semibold mb-2">Preferred Plan</label>
+							<select class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 focus:border-yellow-400 focus:outline-none transition-all">
+								<option value="essential" class="bg-white">Essential (₹9,000/month)</option>
+								<option value="premium" class="bg-white">Premium (₹25,000/month)</option>
 							</select>
 						</div>
 					</div>
 					
 					<div>
-						<label class="block text-white text-sm font-semibold mb-2">Tell us about your needs</label>
-						<textarea rows="4" placeholder="What tasks would you like us to help you with?" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/30 text-white placeholder-gray-300 focus:border-yellow-400 focus:outline-none transition-all resize-none"></textarea>
+						<label class="block text-gray-700 text-sm font-semibold mb-2">Tell us about your needs</label>
+						<textarea rows="4" placeholder="What tasks would you like us to help you with?" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-500 focus:border-yellow-400 focus:outline-none transition-all resize-none"></textarea>
 					</div>
 					
 					<div class="text-center">
@@ -873,7 +844,7 @@
 								Start My Hajika Journey
 							</button>
 						</BorderBeam>
-						<p class="text-blue-200 text-sm mt-4">We'll contact you within 24 hours to set everything up!</p>
+						<p class="text-gray-600 text-sm mt-4">We'll contact you within 24 hours to set everything up!</p>
 					</div>
 				</form>
 			</div>

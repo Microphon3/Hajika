@@ -8,7 +8,7 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	vitePlugin:{
-		inspector:true
+		inspector:false
 	},
 	
 	kit: {

@@ -45,6 +45,7 @@
 	},
 	"dependencies": {
 		"@cloudflare/workerd-darwin-64": "^1.20250813.0",
+		"@sveltejs/adapter-static": "^3.0.9",
 		"@types/three": "^0.179.0",
 		"three": "^0.179.1"
 	}
